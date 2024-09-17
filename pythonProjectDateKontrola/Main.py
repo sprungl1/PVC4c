@@ -34,7 +34,7 @@ def kontrola_data_narozeni(rok, mesic, den):
     print("Datum narození je validní.")
 
 
-# Hlavní část programu
+
 try:
     rok = int(input("Zadejte rok narození: "))
     mesic = int(input("Zadejte měsíc narození: "))
