@@ -28,7 +28,26 @@ print(NumSet)
 #Jakymi všemi metodami je možné smazat/odebrat existující prvek do kolekce a jaké mají tyto metody vstypy?
 NumSet.remove(69)
 print(NumSet)
+my_set = {1, 2, 3}
+my_set.discard(2)
+my_set.clear()  # Vyprázdní množinu
 
-TestS = {5,6}
+# Jakymi všemi metodami je možné upravit hodnotu  existujícího prvek v kolekci a jaké mají tyto metody  vstypy?
+"""TestS = {5,6}
 TestS[1] = 10
-print(TestS)
+print(TestS)"""
+
+# Jakymi všemi metodami je možné ověřit jestli kolekce  obsahuje nějaký prvek?
+testSet = {1, 2, 3}
+if 2 in testSet:
+    print("Prvek 2 je v množině")
+
+    my_set = {1, 2, 3}
+    other_set = {1, 2}
+    if other_set.issubset(my_set):
+        print("Všechny prvky other_set jsou v my_set")
+
+my_set = {1, 2, 3}
+other_set = {1, 2}
+if my_set.issuperset(other_set):
+    print("my_set obsahuje všechny prvky z other_set")
